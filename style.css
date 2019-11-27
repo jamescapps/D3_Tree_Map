@@ -1,10 +1,63 @@
+* {
+  background: black;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 .project {
-    height: 100vh;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+#title, #description {
+  text-align: center;
+  color: white;
+}
+
+#tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: left;
+  width: 120px;
+  height: 75px;
+  pointer-events: none;
+  color: white;
+  background-color: rgba(0,0,0,0.8)
+}
+
+#chart {
+  margin-left: 3%;
+  font-size: .65rem;
+}
+
+.legendLabel {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1rem;
+  } 
+  h3 {
+    font-size: .5rem; 
   }
-  
-  #title, #description {
-    text-align: center;
+  #tooltip {
+    width: 75px;
+    height: 50px;
+    font-size: .5rem;
   }
+  #chart {
+  margin-left: 0%;
+  }
+}
